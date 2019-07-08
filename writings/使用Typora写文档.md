@@ -67,10 +67,12 @@ int main(int argc,const char* argv[])
 
 我习惯使用 shift 键输入英文大写，看来这个习惯 要改改了。不然 ，和中英文的切换就重合了。
 
-[使用这个输入法](使用这个输入法.md)
+[使用这个输入法](使用RIME输入法.md)
 
-## 五 使用 OneNote 图解笔记
+## 五 使用 OneNote 图解笔记 RIME
+
+这是示例图：
 
 ![1562553195690](assets/1562553195690.png)
 
-不过，Windows 10 版本的 OneNote 联网是个大问题，
+不过，Windows 10 版本的 OneNote 联网是个大问题，于是又换成了 OneNote2016 ，熟悉的感觉又回来了；
