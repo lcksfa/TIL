@@ -5,3 +5,4 @@ book.pdf
 cover.txt
 chapter_summary.txt
 _book/
+node_modules/

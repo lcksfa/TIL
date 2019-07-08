@@ -57,3 +57,23 @@
    - 输入`git remote add origin https://github.com/lcksfa/TIL.git`，将本地的目录与远端关联
    - 输入 `git push -u origin master`即可将本地 git 管理的文档推送到 github
    - 下次本地更新了文档，先在本地使用`git commit` ，再直接使用`git push`命令即可推送。
+9. gitbook 插件
+   修改了`book.json`文件，
+
+   ```json
+   {
+     "title": "Today I Learned",
+     "author": "Lcksfa",
+     "plugins": ["page-treeview", "summary3"],
+     "pluginsConfig": {
+       "page-treeview": {
+         "copyright": "Copyright &#169; aleen42",
+         "minHeaderCount": "2",
+         "minHeaderDeep": "2"
+       }
+     }
+   }
+   ```
+
+   使用`gitbook install`安装配置的插件即可，现在，我们的 summary 文件可以有插件`summary3`自由生成了；
+   这里，我还另外添加了一个 treeview 插件，用于在文章的片头生成大概。
