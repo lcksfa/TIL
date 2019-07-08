@@ -6,6 +6,7 @@
 
 - [use_gitbook](use_gitbook/01_summary.md)
   - [gitbook 进门](use_gitbook/gitbook进门.md)
+  - [新增一个 md 文档](use_gitbook/新增一个md文档.md)
 - [cpp](cpp/01_summary.md)
   - [C++template 入门一](cpp/C++template入门一.md)
   - [C++template 入门二](cpp/C++template入门二.md)
@@ -14,4 +15,4 @@
   - [书解《图形思考与表达的 20 堂课》](readings/书解《图形思考与表达的20堂课》.md)
 - [writing](writings/01_summary.md)
   - [开启新的记录](writings/使用Typora写文档.md)
-  - [使用这个输入法](writings/使用这个输入法.md)
+  - [使用 RIME 输入法](writings/使用RIME输入法.md)
