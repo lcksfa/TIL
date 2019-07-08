@@ -50,4 +50,10 @@
 
    则说明服务开启成功！
 
-7.在浏览器查看我们的 book，输入`http://localhost:4000`即可。
+7. 在浏览器查看我们的 book，输入`http://localhost:4000`即可。
+8. 将本地的 gitbook 推送到 github 上
+   - 在 github 上新建一个仓库，我的是`https://github.com/lcksfa/TIL.git`
+   - 在本地的 gitbook 目录`D:\05-gitbook\TIL`下打开`powershell`
+   - 输入`git remote add origin https://github.com/lcksfa/TIL.git`，将本地的目录与远端关联
+   - 输入 `git push -u origin master`即可将本地 git 管理的文档推送到 github
+   - 下次本地更新了文档，先在本地使用`git commit` ，再直接使用`git push`命令即可推送。
