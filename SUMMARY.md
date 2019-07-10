@@ -17,7 +17,7 @@
 
 
 - [sublime](sublime\01_summary.md)
-    - [配置](sublime\我的sublime配置.md)
+    - [重新启用sublime](sublime\我的sublime配置.md)
 
 
 - [usegitbook](use_gitbook\01_summary.md)
@@ -26,12 +26,11 @@
 
 
 - [writing](writings\01_summary.md)
+    - [2019-07-08](writings\2019-07-08.md)
     - [2019-07-10](writings\2019-07-10.md)
     - [HomePage](writings\HomePage.md)
     - [使用 RIME 输入法](writings\使用RIME输入法.md)
     - [开启新的记录](writings\使用Typora写文档.md)
-    - [杂记 190708](writings\杂记190708.md)
-    - [杂记 190710](writings\杂记190710.md)
 
 
 - [我的架构之路](架构师承\01_summary.md)

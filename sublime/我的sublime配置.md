@@ -104,6 +104,9 @@
 ## markdown 
 安装的**插件**
 
+### 插件一览表：
+![](assets/我的sublime配置1.png)
+
 `markdowmEditing`
 
 `markdownPreview`
@@ -130,3 +133,40 @@
   },
 ]
 ```
+## bookmark 插件
+
+`sublime bookmark`
+需要使用配置，`Show Bookmarks In Current Project` 不然在查找bookmark时会找到全部的bookmark，这个很蛋疼的；
+https://github.com/bollu/sublimeBookmark
+There are three modes to the plugin:
+1) All bookmarks will be shown all the time - bookmarks will not be filtered based on the current project. For this mode, use the __Show All Bookmarks__ option.
+
+2)Only bookmarks of the current project will be shown - bookmarks belonging to other projects are *NOT* shown in this mode. Use the Use the __Show Bookmarks In Current Project__ for this mode.
+
+3) Only bookmarks in the current file is shown - irrespective of project. Use the __Show Bookmarks In Current File__ option for this mode.
+
+## 配置sumlime在wsl下的编译文件
+
+### 普通标准配置
+> D:\Program Files\Sublime Text 3\Data\Packages\User
+> 
+
+```json
+{
+    "cmd" : ["bash", "-c", "g++ ${file_name} -o ${file_base_name} && ./${file_base_name}"],
+    "shell": true,
+    "working_dir": "${file_path}",
+}
+```
+
+### 带google test动态库文件的配置
+
+```json
+{
+    "cmd" : ["bash", "-c", "g++ ${file_name} -o ${file_base_name}  -lgtest_main -lgtest -lpthread && ./${file_base_name}"],
+    "shell": true,
+    "working_dir": "${file_path}",
+}
+```
+所有测试都通过了；
+
