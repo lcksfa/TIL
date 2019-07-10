@@ -1,6 +1,10 @@
 - [TIL](README.md)
 
 
+- [基础知识](base\01_summary.md)
+    - [编码到底是个啥](base\我的编码你不懂.md)
+
+
 - [cpp](cpp\01_summary.md)
     - [C++ Templates 入门一](cpp\C++template入门一.md)
     - [C++template入门二](cpp\C++template入门二.md)
@@ -9,6 +13,8 @@
 
 
 - [flutter](flutter\01_summary.md)
+    - [hello world ,flutter](flutter\回头来写个hello world.md)
+    - [flutter 第一个demo分析](flutter\第一个demo分析.md)
     - [获取 Flutter SDK](flutter\配置flutter开发环境.md)
 
 
@@ -28,7 +34,6 @@
 - [writing](writings\01_summary.md)
     - [2019-07-08](writings\2019-07-08.md)
     - [2019-07-10](writings\2019-07-10.md)
-    - [HomePage](writings\HomePage.md)
     - [使用 RIME 输入法](writings\使用RIME输入法.md)
     - [开启新的记录](writings\使用Typora写文档.md)
 

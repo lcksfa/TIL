@@ -2,8 +2,6 @@
 
 去 flutter 官网下载其最新可用的安装包，官网地址：https://flutter.io/sdk-archive/#windows
 
-image-20180820142229086
-
 注意，Flutter 的渠道版本会不停变动，请以 Flutter 官网为准。另外，在中国大陆地区，要想正常获取安装包列表或下载安装包，可能需要翻墙，读者也可以去 Flutter github 项目下去下载安装包，地址：https://github.com/flutter/flutter/releases 。
 
 将安装包 zip 解压到你想安装 Flutter SDK 的路径（如：C:\src\flutter；注意，不要将 flutter 安装到需要一些高权限的路径如 C:\Program Files\）。
@@ -59,3 +57,12 @@ try g vscode use vs emulator
 等待项目创建继续，并显示 main.dart 文件
 
 android sdk path :C:\Users\Administrator\AppData\Local\Android\Sdk
+
+## 使用蓝叠模拟器
+试用了无数个模拟器，总算找到一个能用的了，就是蓝叠模拟器；
+使用前在cmd中输入`adb connect 127.0.0.1:5555` 然后就可以在vscode中调试了；
+如果没有自动启动app，需要手动启动下程序；
+![](assets/配置flutter开发环境0.png)
+
+
+

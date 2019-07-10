@@ -1,5 +1,8 @@
 # 重新启用sublime
 
+## 插件一览表：
+![](assets/我的sublime配置1.png)
+
 ## 配置
 当前的 sublime 配置：
 
@@ -104,9 +107,6 @@
 ## markdown 
 安装的**插件**
 
-### 插件一览表：
-![](assets/我的sublime配置1.png)
-
 `markdowmEditing`
 
 `markdownPreview`
@@ -114,6 +114,17 @@
 `Image​Paste`  这个绝对值得拥有，markdown时 插入图片使用 复制后，直接ctrl+v即可复制到当前子目录下
 
 ![](assets/我的sublime配置0.png)
+
+### markdown 专用配置
+配置的位置：
+![](assets/我的sublime配置2.png)
+```json
+{
+    "font_face": "萍方-简",
+    "font_size": 12,
+}
+```
+
 ## 终端调用
 插件 `callcmd` 按键配置
 
