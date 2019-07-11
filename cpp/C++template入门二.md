@@ -1,8 +1,8 @@
-# C++template入门二
+# C++template 入门二
 
 > be As a C++ enthusiast
 
-在[C++template入门一](D:\nutCloud\sourceMd\TyporaMD\C++template入门一.md)中，我们主要关注了模板函数，这一次，我们开始关注**类模板**；
+在[C++template 入门一](D:\nutCloud\sourceMd\TyporaMD\C++template入门一.md)中，我们主要关注了模板函数，这一次，我们开始关注**类模板**；
 
 ## 为何使用类模板
 
@@ -10,7 +10,7 @@
 
 ## 如何使用
 
-### 类模板的代码	
+### 类模板的代码
 
 ```c++
 template <class T> class templateCls {
@@ -23,7 +23,7 @@ public:
 
 `T`就是模板参数的占位符；
 
-### 如何创建一个类模板的对象呢？
+### 如何创建一个类模板的对象
 
 ```c++
 templateCls<int> inttempCls;
@@ -77,9 +77,6 @@ template <class T> class Calculator {
 
 测试用例运行：
 
-int类型时测试成功；
+int 类型时测试成功；
 
-float数据类型时，测试失败
-
-
-
+float 数据类型时，测试失败

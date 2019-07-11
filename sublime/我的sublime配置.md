@@ -1,9 +1,11 @@
-# 重新启用sublime
+# 重新启用 sublime
 
 ## 插件一览表：
+
 ![](assets/我的sublime配置1.png)
 
 ## 配置
+
 当前的 sublime 配置：
 
 ```json
@@ -86,98 +88,116 @@
 ```
 
 ## 智能提示
+
 `EasyClangComplete` 自定义的配置文件：
 
 ```json
 {
-    "common_flags" : [
+  "common_flags": [
     // some example includes
     "-I/usr/include",
     "-I$project_base_path",
     // this is needed to include the correct headers for clang
-    "-ID:\\zappenv\\LLVM\\lib\\clang\\8.0.0\\include",
-    ],
-    "clang_binary" : "D:\\zappenv\\LLVM\\bin\\clang++",
-    "hide_default_completions": false,
-     "show_type_info": false,
-     "show_type_body" : false,
-}   
+    "-ID:\\zappenv\\LLVM\\lib\\clang\\8.0.0\\include"
+  ],
+  "clang_binary": "D:\\zappenv\\LLVM\\bin\\clang++",
+  "hide_default_completions": false,
+  "show_type_info": false,
+  "show_type_body": false
+}
 ```
 
-## markdown 
+## markdown
+
 安装的**插件**
 
 `markdowmEditing`
 
 `markdownPreview`
 
-`Image​Paste`  这个绝对值得拥有，markdown时 插入图片使用 复制后，直接ctrl+v即可复制到当前子目录下
+`Image​Paste` 这个绝对值得拥有，markdown 时 插入图片使用 复制后，直接 ctrl+v 即可复制到当前子目录下
 
 ![](assets/我的sublime配置0.png)
 
 ### markdown 专用配置
+
 配置的位置：
 ![](assets/我的sublime配置2.png)
+
 ```json
 {
-    "font_face": "萍方-简",
-    "font_size": 12,
+  "font_face": "萍方-简",
+  "font_size": 12
 }
 ```
 
 ## 终端调用
+
 插件 `callcmd` 按键配置
 
 > D:\Program Files\Sublime Text 3\Data\Packages\User\Default (Windows).sublime-keymap
-> 
 
 ## 自定义的按键
+
 ```json
 [
-    { "keys": ["ctrl+e"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
-    { "keys": ["ctrl+b"], "command": "toggle_side_bar" },
-    {"keys": ["ctrl+`"],
-    "command": "cmd_caller_default"},
-    {
+  {
+    "keys": ["ctrl+e"],
+    "command": "show_overlay",
+    "args": { "overlay": "goto", "show_files": true }
+  },
+  { "keys": ["ctrl+b"], "command": "toggle_side_bar" },
+  { "keys": ["ctrl+`"], "command": "cmd_caller_default" },
+  {
     "keys": ["ctrl+shift+l"],
     "command": "cmd_caller_list"
-  },
+  }
 ]
 ```
+
 ## bookmark 插件
 
 `sublime bookmark`
-需要使用配置，`Show Bookmarks In Current Project` 不然在查找bookmark时会找到全部的bookmark，这个很蛋疼的；
+需要使用配置，`Show Bookmarks In Current Project` 不然在查找 bookmark 时会找到全部的 bookmark，这个很蛋疼的；
 https://github.com/bollu/sublimeBookmark
 There are three modes to the plugin:
-1) All bookmarks will be shown all the time - bookmarks will not be filtered based on the current project. For this mode, use the __Show All Bookmarks__ option.
 
-2)Only bookmarks of the current project will be shown - bookmarks belonging to other projects are *NOT* shown in this mode. Use the Use the __Show Bookmarks In Current Project__ for this mode.
+1. All bookmarks will be shown all the time - bookmarks will not be filtered based on the current project. For this mode, use the **Show All Bookmarks** option.
 
-3) Only bookmarks in the current file is shown - irrespective of project. Use the __Show Bookmarks In Current File__ option for this mode.
+2. Only bookmarks of the current project will be shown - bookmarks belonging to other projects are _NOT_ shown in this mode. Use the Use the **Show Bookmarks In Current Project** for this mode.
 
-## 配置sumlime在wsl下的编译文件
+3. Only bookmarks in the current file is shown - irrespective of project. Use the **Show Bookmarks In Current File** option for this mode.
+
+## 配置 sumlime 在 wsl 下的编译文件
 
 ### 普通标准配置
+
 > D:\Program Files\Sublime Text 3\Data\Packages\User
-> 
 
 ```json
 {
-    "cmd" : ["bash", "-c", "g++ ${file_name} -o ${file_base_name} && ./${file_base_name}"],
-    "shell": true,
-    "working_dir": "${file_path}",
+  "cmd": [
+    "bash",
+    "-c",
+    "g++ ${file_name} -o ${file_base_name} && ./${file_base_name}"
+  ],
+  "shell": true,
+  "working_dir": "${file_path}"
 }
 ```
 
-### 带google test动态库文件的配置
+### 带 google test 动态库文件的配置
 
 ```json
 {
-    "cmd" : ["bash", "-c", "g++ ${file_name} -o ${file_base_name}  -lgtest_main -lgtest -lpthread && ./${file_base_name}"],
-    "shell": true,
-    "working_dir": "${file_path}",
+  "cmd": [
+    "bash",
+    "-c",
+    "g++ ${file_name} -o ${file_base_name}  -lgtest_main -lgtest -lpthread && ./${file_base_name}"
+  ],
+  "shell": true,
+  "working_dir": "${file_path}"
 }
 ```
+
 所有测试都通过了；
-

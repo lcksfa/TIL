@@ -59,10 +59,8 @@ try g vscode use vs emulator
 android sdk path :C:\Users\Administrator\AppData\Local\Android\Sdk
 
 ## 使用蓝叠模拟器
+
 试用了无数个模拟器，总算找到一个能用的了，就是蓝叠模拟器；
-使用前在cmd中输入`adb connect 127.0.0.1:5555` 然后就可以在vscode中调试了；
-如果没有自动启动app，需要手动启动下程序；
+使用前在 cmd 中输入`adb connect 127.0.0.1:5555` 然后就可以在 vscode 中调试了；
+如果没有自动启动 app，需要手动启动下程序；
 ![](assets/配置flutter开发环境0.png)
-
-
-
