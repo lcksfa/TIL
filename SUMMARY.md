@@ -16,14 +16,18 @@
 
 
 - [flutter](flutter\01_summary.md)
+    - [异步async 和await](flutter\async和await.md)
+    - [dart学习记录](flutter\dart.md)
+    - [flutter run时报错](flutter\run时报错.md)
     - [这是官方的第四步](flutter\step4，一个无限滚动的listview.md)
+    - [使用 BLoc](flutter\使用BLoC.md)
     - [use mvc](flutter\使用MVC.md)
     - [使用一个额外的包](flutter\入门第二步.md)
     - [stateful widget](flutter\创建一个带状态的widget.md)
     - [hello world ,flutter](flutter\回头来写个hello world.md)
     - [知识体系](flutter\学习路线图.md)
     - [flutter 常用中英名词 对照表](flutter\常用中英对照.md)
-    - [使用VSCode构建的flutter程序](flutter\独立的使用VScode.md)
+    - [使用 VSCode 构建的 flutter 程序](flutter\独立的使用VScode.md)
     - [flutter 第一个 demo 分析](flutter\第一个demo分析.md)
     - [获取 Flutter SDK](flutter\配置flutter开发环境.md)
 
@@ -46,8 +50,11 @@
     - [2019-07-10](writings\2019-07-10.md)
     - [0711](writings\2019-07-11.md)
     - [2019-07-12](writings\2019-07-12.md)
+    - [2019-07-15](writings\2019-07-15.md)
+    - [2019-07-16](writings\2019-07-16.md)
     - [使用 RIME 输入法](writings\使用RIME输入法.md)
     - [开启新的记录](writings\使用Typora写文档.md)
+    - [use anki learn everything](writings\使用anki.md)
 
 
 - [我的架构之路](架构师承\01_summary.md)
