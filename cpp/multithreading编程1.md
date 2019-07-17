@@ -1,8 +1,4 @@
-# C++11的多线程开发1
-
-[C++11 Multithreading – Part 1 : Three Different ways to Create Threads](https://thispointer.com/c-11-multithreading-part-1-three-different-ways-to-create-threads/)
-
-
+# C++11的多线程开发
 
 ## 引入线程库头文件
 
@@ -184,6 +180,9 @@ int main()  
 
 
 
-## 异步
+## Source
 
-[参考](https://putridparrot.com/blog/threads-promises-futures-async-c/)
+[C++11 Multithreading – Part 1 : Three Different ways to Create Threads](https://thispointer.com/c-11-multithreading-part-1-three-different-ways-to-create-threads/)
+
+[C++11 Multithreading – Part 2: Joining and Detaching Threads][https://thispointer.com//c11-multithreading-part-2-joining-and-detaching-threads/]
+
