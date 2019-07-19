@@ -7,6 +7,7 @@
 - CMake Tools
 
 其插件如图所示:
+
 ![](./assets/2019-07-18-22-40-34.png)
 
 ## 示例工程
@@ -88,20 +89,17 @@ COMMAND ${This}
 使用 cmake 最大的好处就在这里,不需要弄那么多麻烦的配置,一个脚本就可以了,
 
 现在的工程目录结构如图:
-![964972c7c19dd5d3d0915eeac176bbef.png](en-resource://database/3523:1)
+
+![](assets/2019-07-19-07-02-46.png)
 
 在 gtestExample 根目录,开始构建 cmake 工程
 
-![820d10ff85cbced83d1dbaf0d053ea06.png](en-resource://database/3525:1)
-
 使用 VScode 的 cmake 工具时,第一步会需要指定 构建工具:
-![7867952bc5efa8b6eddcbafcbd8990cc.png](en-resource://database/3527:1)
 
 这里我的选择 挺多的,构建完成只是时间问题;
 如果你构建失败,可以从 cmake 脚本和运行库,google test 的版本中查找原因;
 
 构建完成后,按 F1 键 :
-![e550a69c69898dec0c56bb24e5ec6785.png](en-resource://database/3529:1)
 
 ### 写测试的测试代码
 
@@ -123,7 +121,6 @@ TEST(ExampleTests, DemonstaateGTestMacors)
 选择 Cmake run tests
 则开始 运行测试了;
 运行结果 如下:
-![12caebb3b73a600c6551a69a144a4841.png](en-resource://database/3531:0)
 
 ### TDD
 
@@ -177,3 +174,5 @@ return a > b ? a : b;
 继续测试,测试通过;
 
 如此,一个完整的 TDD 工程就搭建完整了,后面,就可以进行真实的代码开发了;
+
+`cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=YES ..`
