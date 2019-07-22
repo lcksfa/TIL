@@ -43,6 +43,7 @@ thread.RunOnCurrentThreadWithLoop(nbase::MessageLoop::kUIMessageLoop);
 
 下面就使用RunOnCurrentThreadWithLoop  ----> Run()开始消息循环,Run函数做了实际的工作
 源码
+
 ```c++
 void FrameworkThread::Run()
 {
