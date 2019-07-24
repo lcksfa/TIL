@@ -152,3 +152,87 @@ You can control the flow of your Dart code using any of the following:
 - `break` and `continue`
 - `switch` and `case`
 - `assert`
+
+## 一个例子
+
+```dart
+
+class Meta{
+  double price;
+  String name;
+  Meta(this.name,this.price);//构造函数语法糖
+}
+
+class Item extends Meta{
+  Item(name,price) : super(name,price);//委托父类构造
+  Item operator+(Item item) => Item(name +' ' + item.name,price + item.price);//+运算符重载？不过dart里是没有重载的说法的，不过可以和c++的运算符重载对应理解
+}
+
+//打印的抽象接口类，使用了abstract，恩，和java的interface一样；
+abstract class PrintHelper{  
+  PrintInfo() => print(getInfo());
+  getInfo();
+}
+//使用with mixin 接口，类似c++里的多重继承，不过应该是有限制的，可能只能使用with连接抽象接口？
+//我不确定，
+class ShoppingCart extends Meta with PrintHelper{
+  DateTime date;
+  String code;
+  List<Item> bookings;
+
+  double get price => bookings.reduce((value,elem) => value + elem).price;
+	
+  //这里可以理解为构造函数的重载，withCode可以随意命名，将参数使用{}包起来，表示某些参数可以不写，直接使用，这里是核心语法，需要重点关注！！
+  ShoppingCart({name}) : this.withCode(name:name,code:null);
+  ShoppingCart.withCode({name,this.code}):date = DateTime.now(),super(name,0);
+
+  //这里覆写了PrintHelper的getInfo函数，在调用PrintInfo时调用这个函数.
+  @override
+  getInfo()  =>'''
+  购物车信息：
+  -------------------------
+  用户名： $name 
+  优惠码：${code??" 没有 "}  //这里也很关键，表示3重运算的简写，等同于 code？code :"没有"；
+  总价： $price
+  日期： $date
+  -------------------------
+  ''';
+}
+
+void main(){
+  ShoppingCart.withCode(name:'张三',code: '123456')
+  ..bookings = [Item('苹果',10.0),Item('鸭梨',20.0)]
+  ..PrintInfo();
+
+  ShoppingCart.withCode(name:'李四')
+  ..bookings = [Item('苹果',15.0),Item('西瓜',20.0)]
+  ..PrintInfo();
+}
+```
+
+输出：
+
+```
+[Running] dart "f:\02-dart\shoppingmarket6.dart"
+  购物车信息：
+  -------------------------
+  用户名： 张三 
+  优惠码：123456 
+  总价： 30.0
+  日期： 2019-07-22 15:02:45.600262
+  -------------------------
+  
+  购物车信息：
+  -------------------------
+  用户名： 李四 
+  优惠码： 没有  
+  总价： 35.0
+  日期： 2019-07-22 15:02:45.606254
+  -------------------------
+```
+
+
+
+
+
+喜欢dart没有商量，属于C++系的语法糖，我很喜欢吃！

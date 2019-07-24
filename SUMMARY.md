@@ -11,6 +11,7 @@
 
 - [Windows桌面端开发](Windows/01-summary.md)
     - [目前的 windows 桌面软件开发](Windows/windows桌面开发的可能性.md)
+    - [使用fmt库](Windows/使用fmt库.md)
     - [Windows 窗口](Windows/窗口过程基础.md)
     - [总览](Windows/网易UI库分析1-总览.md)
     - [资源管理](Windows/网易UI库分析2-资源管理.md)
@@ -23,6 +24,7 @@
 
 
 - [基础知识](base/01_summary.md)
+    - [Windows10上使用vcpkg](base/vcpkg的使用.md)
     - [编码到底是个啥](base/我的编码你不懂.md)
 
 
@@ -80,7 +82,9 @@
     - [2019-07-16](writings/2019-07-16.md)
     - [2019-07-18](writings/2019-07-18.md)
     - [2019-07-19](writings/2019-07-19.md)
-    - [2019-07-22记录](writings/2019-07-22.md)
+    - [2019-07-22](writings/2019-07-22.md)
+    - [2019-07-23](writings/2019-07-23.md)
+    - [2019-07-24](writings/2019-07-24.md)
     - [使用 RIME 输入法](writings/使用RIME输入法.md)
     - [开启新的记录](writings/使用Typora写文档.md)
     - [use anki learn everything](writings/使用anki.md)
