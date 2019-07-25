@@ -85,6 +85,7 @@
     - [2019-07-22](writings/2019-07-22.md)
     - [2019-07-23](writings/2019-07-23.md)
     - [2019-07-24](writings/2019-07-24.md)
+    - [2019-07-25](writings/2019-07-25.md)
     - [使用 RIME 输入法](writings/使用RIME输入法.md)
     - [开启新的记录](writings/使用Typora写文档.md)
     - [use anki learn everything](writings/使用anki.md)
