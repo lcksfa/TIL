@@ -63,3 +63,18 @@ $(VcpkgRoot)debug\lib\manual-link\gtest_maind.lib
 If you want to create your own custom main(), replace `gtest_main.lib` with `gtest.lib`.
 If you want to use gmock, you can replace it with `gmock_main.lib` or `gmock.lib`.
 
+
+
+## 切换VS的版本,指定某个版本
+
+F:\05-vcpkg-install\vcpkg\triplets
+
+![1564141204471](assets/1564141204471.png)
+
+这里指定的是VS2015  VS2019是V142
+
+## 使用例子
+
+[安装](https://vcpkg.readthedocs.io/en/latest/examples/installing-and-using-packages/)
+
+${vcpkgRoot}  ===> F:\05-vcpkg-install\vcpkg\installed
