@@ -6,6 +6,7 @@
 - [我的TDD之旅](TDD/01-summary.md)
     - [在Gui程序中使用TDD](TDD/TDD用于Gui.md)
     - [使用 VScode CMake 搭建 TDD 工程示例](TDD/使用 VScode CMake 搭建 TDD 工程示例.md)
+    - [使用catch2用于TDD](TDD/使用catch2.md)
     - [在VS2015中使用googletest进行TDD](TDD/在VS2015中使用googletest.md)
 
 
@@ -13,9 +14,9 @@
     - [目前的 windows 桌面软件开发](Windows/windows桌面开发的可能性.md)
     - [使用fmt库](Windows/使用fmt库.md)
     - [Windows 窗口](Windows/窗口过程基础.md)
-    - [总览](Windows/网易UI库分析1-总览.md)
-    - [资源管理](Windows/网易UI库分析2-资源管理.md)
-    - [消息机制](Windows/网易UI库分析3-消息机制.md)
+    - [网易UI库总览](Windows/网易UI库分析1-总览.md)
+    - [网易UI库资源管理](Windows/网易UI库分析2-资源管理.md)
+    - [网易UI库消息机制](Windows/网易UI库分析3-消息机制.md)
 
 
 - [我的架构之路](architecture/01_summary.md)
@@ -38,6 +39,7 @@
     - [C++11的多线程开发2](cpp/multithreading编程2.md)
     - [异步编程](cpp/multithreading编程3.md)
     - [std::packaged](cpp/stdpackaged_task 的使用.md)
+    - [使用可能成为c++标准库的 fmt格式字符串库](cpp/使用fmt库.md)
     - [现代C++的异常处理](cpp/异常处理.md)
     - [现代 C++中的 weak](cpp/现代C++中的weak_ptr.md)
 
@@ -86,6 +88,8 @@
     - [2019-07-23](writings/2019-07-23.md)
     - [2019-07-24](writings/2019-07-24.md)
     - [2019-07-25](writings/2019-07-25.md)
+    - [2019-07-26](writings/2019-07-26.md)
+    - [2019-07-27](writings/2019-07-27.md)
     - [使用 RIME 输入法](writings/使用RIME输入法.md)
     - [开启新的记录](writings/使用Typora写文档.md)
     - [use anki learn everything](writings/使用anki.md)
